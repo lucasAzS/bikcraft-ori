@@ -30,6 +30,31 @@ p {
   border-color: white;
 }
 
+.btn.btn-black:hover {
+  color: black;
+  border-color: black;
+}
+
+.subtitulo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitulo::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 8px auto;
+}
+
 /* Header */
 
 .header {
@@ -38,6 +63,7 @@ p {
   width: 100%;
   background: var(--goldly); /* gold */
   padding: 15px 0;
+  z-index: 10;
 }
 
 .menu-header {
@@ -109,4 +135,75 @@ p {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.1em;
+}
+
+/* Produtos */
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos-lista li {
+  background: var(--goldly);
+  text-align: center;
+}
+
+.produtos-lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos-lista li h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 2px auto;
+}
+
+.produtos-lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos-icone {
+  background: black;
+  padding: 20px;
+}
+
+.call {
+  padding-top: 40px;
+  text-align: center;
+  clear: both;
+}
+
+.call p {
+  margin-bottom: 20px;
+}
+
+/* portifolio */
+
+.portifolio {
+  width: 100%;
+  background: black;
+  padding: 40px 0;
+}
+
+.portifolio .subtitulo {
+  color: var(--goldly);
+}
+
+.portifolio .subtitulo::after {
+  background: var(--goldly);
+}
+
+.portifolio-lista li:last-child {
+  margin-top: 20px;
+}
+
+.portifolio .call p {
+  color: white;
 }
