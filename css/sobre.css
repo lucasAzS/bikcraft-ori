@@ -1,9 +1,10 @@
 .interna-sobre {
   background: url('../img/bg-sobre.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .missao-sobre {
-  padding-top: 60px 0;
+  padding-top: 60px;
 }
 
 .missao-sobre p {
